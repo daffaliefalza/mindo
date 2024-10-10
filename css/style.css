@@ -55,6 +55,21 @@ nav .container ul li a {
   text-decoration: none;
 }
 
+.active {
+  position: relative;
+}
+
+.active::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -5px;
+  width: 85%;
+  background-color: #fff;
+  height: 3px;
+}
+
 footer {
   text-align: center;
   background-color: #b50924;
