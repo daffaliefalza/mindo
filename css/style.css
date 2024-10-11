@@ -70,7 +70,30 @@ nav .container ul li a {
   height: 3px;
 }
 
-footer {
+/* footer {
   text-align: center;
   background-color: #b50924;
+  color: #fff !important;
+} */
+
+/* Footer */
+.footer {
+  background-color: #222;
+  color: #bbb;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.footer .footer-links {
+  margin-bottom: 30px;
+}
+
+.footer .footer-links a {
+  margin: 0 15px;
+  color: #ffcc00;
+}
+
+.footer .social-icons img {
+  width: 30px;
+  margin: 0 10px;
 }

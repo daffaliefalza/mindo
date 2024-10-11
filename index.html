@@ -7,17 +7,221 @@
 
     <link rel="stylesheet" href="css/style.css" />
 
-    <style></style>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      a {
+        text-decoration: none;
+        color: #ffcc00;
+      }
+
+      .container {
+        width: 90%;
+        margin: auto;
+        max-width: 1200px;
+      }
+
+      /* Navbar */
+      /* nav {
+        background-color: #333;
+        padding: 10px 0;
+      }
+
+      nav .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+      }
+
+      nav ul li {
+        margin-left: 20px;
+      }
+
+      nav ul li a {
+        color: white;
+        font-weight: bold;
+        transition: color 0.3s ease;
+      }
+
+      nav ul li a:hover {
+        color: #ffcc00;
+      } */
+
+      ul {
+        margin-top: 10px !important;
+      }
+
+      ul li a {
+        color: #fff !important;
+      }
+
+      /* Hero Section */
+      .hero {
+        background-image: url("images/banner.png");
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100vh;
+        position: relative;
+        z-index: 1;
+      }
+
+      .hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        /* background: rgba(0, 0, 0, 0.1); */
+        z-index: -1;
+      }
+
+      /* .hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: -1;
+      } */
+
+      .hero h1 {
+        font-size: 5rem;
+        margin-bottom: 20px;
+      }
+
+      .hero p {
+        font-size: 1.5rem;
+        margin-bottom: 40px;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      /* .btn {
+        padding: 10px 20px;
+        background-color: black;
+        border-radius: 30px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: black;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      } */
+
+      .btn:hover {
+        background-color: #e6b800;
+      }
+
+      /* About Section */
+      .about {
+        padding: 80px 20px;
+        text-align: center;
+        background-color: #f7f7f7;
+      }
+
+      .about h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+      }
+
+      .about p {
+        max-width: 800px;
+        margin: 0 auto;
+        font-size: 1.2rem;
+      }
+
+      /* Menu Section */
+      .menu {
+        padding: 80px 20px;
+      }
+
+      .menu h2 {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 40px;
+      }
+
+      .menu-items {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+      }
+
+      .menu-item {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform 0.3s ease;
+      }
+
+      .menu-item:hover {
+        transform: translateY(-10px);
+      }
+
+      .menu-item img {
+        width: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        object-fit: cover;
+        height: 200px;
+      }
+
+      .menu-item h3 {
+        margin: 15px 0;
+        font-size: 1.5rem;
+      }
+
+      .menu-item p {
+        padding: 0 15px;
+        margin-bottom: 20px;
+      }
+
+      .cta {
+        background-color: #ffcc00;
+        padding: 40px 20px;
+        height: 300px;
+        text-align: center;
+      }
+
+      .cta h2 {
+        font-size: 1.8rem;
+      }
+
+      .cta p {
+        font-size: 1.1rem;
+      }
+
+      .cta .btn {
+        display: inline-block;
+        color: #fff;
+        background-color: black;
+        padding: 1rem 2rem;
+        margin-top: 10px;
+        border-radius: 10px;
+      }
+    </style>
   </head>
   <body>
-    <!-- nav -->
-
-    <nav class="nav">
+    <!-- Navbar -->
+    <!-- <nav>
       <div class="container">
         <a href="#">
           <img src="images/logo-mindo.png" alt="Logo" />
         </a>
-
         <ul>
           <li><a href="index.html" class="active">Home</a></li>
           <li><a href="about.html">About</a></li>
@@ -27,23 +231,104 @@
           <li><a href="kontak.html">Kontak</a></li>
         </ul>
       </div>
-    </nav>
+    </nav> -->
 
-    <!-- nav end -->
-
-    <!-- footer -->
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-social-media">
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
-        </div>
-        <p>Copyright &copy; PT Mindo Cipta Pangan | 2024 All Rights Reserved</p>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div
+        class="container"
+        style="display: flex; justify-content: center; align-items: center"
+      >
+        <ul
+          style="
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+          "
+        >
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="frozen.html">Frozen</a></li>
+          <li><a href="kemitraan.html">Kemitraan</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+        </ul>
       </div>
-    </footer>
+    </section>
 
-    <!-- footer end -->
+    <!-- About Section -->
+    <section class="about">
+      <h2>About Us</h2>
+      <p>
+        Mindo Fried Chicken didirikan dengan semangat "Pantang Pulang Sebelum
+        Kenyang" pada tahun 2020. Kami berkomitmen untuk menghadirkan pengalaman
+        makan yang tak terlupakan dengan sajian ayam goreng terbaik, renyah di
+        luar dan juicy di dalam.
+        <br /><br />
+        Dengan berfokus pada inovasi rasa dan menu yang beragam, kami terus
+        berkembang untuk menjadi pilihan utama pecinta ayam goreng. Selain itu,
+        kami menawarkan paket kemitraan dengan harga terjangkau bagi mereka yang
+        ingin memulai bisnis sendiri dengan dukungan penuh dari tim kami.
+        Bersama Mindo, kesuksesan bukan hanya impian, tapi tujuan yang dapat
+        dicapai.
+      </p>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu">
+      <h2>Our Best Sellers</h2>
+      <div class="menu-items">
+        <div class="menu-item">
+          <img src="images/sample-menu.png" alt="Crispy Fried Chicken" />
+          <h3>Crispy Fried Chicken</h3>
+          <p>
+            Golden, crunchy, and perfectly seasoned to satisfy your cravings.
+          </p>
+        </div>
+        <div class="menu-item">
+          <img src="images/sample-menu.png" alt="Spicy Wings" />
+          <h3>Spicy Wings</h3>
+          <p>Bold, fiery, and packed with a punch of flavors.</p>
+        </div>
+        <div class="menu-item">
+          <img src="images/sample-menu.png" alt="Fried Chicken Burger" />
+          <h3>Fried Chicken Burger</h3>
+          <p>A juicy fried chicken patty with fresh toppings on a soft bun.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to action -->
+    <section class="cta">
+      <div class="container">
+        <h2>Ingin gabung menjadi kemitraan?</h2>
+        <p>
+          Mulai perjalanan Anda sebagai pengusaha dengan bergabung bersama Mindo
+          Fried Chicken! Dapatkan dukungan penuh, konsep bisnis yang teruji, dan
+          kesempatan untuk memiliki usaha sendiri dengan brand yang sudah
+          dikenal luas. Jadilah bos untuk bisnis Anda sendiri dan nikmati
+          kesuksesan bersama kami.
+        </p>
+        <a href="kemitraan.html" class="btn">Gabung Kemitraan</a>
+      </div>
+    </section>
+    <!-- Call to action end -->
+
+    <!-- Testimonials Section -->
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Contact Us</a>
+      </div>
+      <div class="social-icons">
+        <img src="" alt="" />
+        <img src="" alt="" />
+      </div>
+      <p>&copy; 2024 Mindo Fried Chicken. All Rights Reserved.</p>
+    </footer>
   </body>
 </html>

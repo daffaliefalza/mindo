@@ -8,14 +8,41 @@
     <link rel="stylesheet" href="css/style.css" />
 
     <style>
+      /* Frozen Food Section */
       .frozen-food {
+        background-color: #f9f9f9;
         padding: 5rem 0;
+        text-align: center;
+      }
+
+      .frozen-food h2 {
+        font-size: 2.5rem;
+        color: #333;
+        margin-bottom: 2rem;
+        font-weight: bold;
+      }
+
+      .frozen-food .description {
+        max-width: 600px;
+        margin: 0 auto 3rem;
+        font-size: 1.2rem;
+        color: #555;
       }
 
       .frozen-food .container {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         gap: 2rem;
+      }
+
+      .frozen-food img {
+        width: 100%;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+      }
+
+      .frozen-food img:hover {
+        transform: scale(1.05);
       }
     </style>
   </head>
@@ -41,16 +68,22 @@
 
     <!-- nav end -->
 
+    <!-- Frozen Food Section -->
     <section class="frozen-food">
-      <h2 style="text-align: center">Mindo Frozen Food</h2>
+      <h2>Mindo Frozen Food</h2>
+      <p class="description">
+        Kami menawarkan berbagai macam produk makanan beku termasuk kebab, dim
+        sum, sosis, dan masih banyak lagi. Cocok untuk makanan cepat saji dan
+        cemilan Anda.
+      </p>
       <div class="container">
-        <img src="images/frozen-1.png" alt="" />
-        <img src="images/frozen-2.png" alt="" />
-        <img src="images/frozen-3.png" alt="" />
-        <img src="images/frozen-4.png" alt="" />
-        <img src="images/frozen-5.png" alt="" />
-        <img src="images/frozen-6.png" alt="" />
-        <img src="images/frozen-7.png" alt="" />
+        <img src="images/frozen-1.png" alt="Frozen Food 1" />
+        <img src="images/frozen-2.png" alt="Frozen Food 2" />
+        <img src="images/frozen-3.png" alt="Frozen Food 3" />
+        <img src="images/frozen-4.png" alt="Frozen Food 4" />
+        <img src="images/frozen-5.png" alt="Frozen Food 5" />
+        <img src="images/frozen-6.png" alt="Frozen Food 6" />
+        <img src="images/frozen-7.png" alt="Frozen Food 7" />
       </div>
     </section>
 
