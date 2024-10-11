@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galeri</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <style>
+      /* Photo Gallery Styling */
+      .foto-galeri {
+        margin-bottom: 4rem;
+        margin-top: 2rem;
+      }
+
+      .foto-galeri img {
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 2rem;
+        transition: transform 0.3s ease;
+      }
+
+      .foto-galeri img:hover {
+        transform: scale(1.05);
+      }
+
+      .foto-galeri img:not(:last-child) {
+        margin-right: 2rem;
+      }
+
+      .foto-galeri {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+      }
+
+      /* Video Gallery Styling */
+      .video-galeri video {
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 2rem;
+        transition: transform 0.3s ease;
+      }
+
+      .video-galeri video:hover {
+        transform: scale(1.05);
+      }
+
+      .video-galeri {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- nav -->
+    <nav class="nav">
+      <div class="container">
+        <a href="#">
+          <img src="images/logo-mindo.png" alt="Logo" />
+        </a>
+
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="frozen.html">Frozen</a></li>
+          <li><a href="kemitraan.html">Kemitraan</a></li>
+          <li><a href="galeri.html" class="active">Galeri</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- nav end -->
+
+    <!-- Gallery Section -->
+    <section class="galeri">
+      <div class="container">
+        <!-- Photo Gallery -->
+        <div class="foto-galeri">
+          <h2>Foto Galeri</h2>
+          <img src="images/galeri-1.jpeg" alt="Galeri Foto 1" />
+          <img src="images/galeri-2.jpeg" alt="Galeri Foto 2" />
+          <img src="images/galeri-3.jpg" alt="Galeri Foto 3" />
+          <img src="images/galeri-4.jpg" alt="Galeri Foto 4" />
+          <img src="images/galeri-5.jpeg" alt="Galeri Foto 5" />
+        </div>
+
+        <!-- Video Gallery -->
+        <div class="video-galeri">
+          <h2>Galeri Video</h2>
+          <video controls>
+            <source src="video/video-1.mp4" type="video/mp4" />
+            Your browser does not support HTML video.
+          </video>
+
+          <video controls>
+            <source src="video/video-2.mp4" type="video/mp4" />
+            Your browser does not support HTML video.
+          </video>
+
+          <video controls>
+            <source src="video/video-3.mp4" type="video/mp4" />
+            Your browser does not support HTML video.
+          </video>
+
+          <video controls>
+            <source src="video/video-4.mp4" type="video/mp4" />
+            Your browser does not support HTML video.
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-social-media">
+          <img src="" alt="" />
+          <img src="" alt="" />
+          <img src="" alt="" />
+          <img src="" alt="" />
+        </div>
+        <p>Copyright &copy; PT Mindo Cipta Pangan | 2024 All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <!-- footer end -->
+  </body>
+</html>
