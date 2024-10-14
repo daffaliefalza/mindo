@@ -7,6 +7,12 @@
 
     <link rel="stylesheet" href="css/style.css" />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+
     <style>
       * {
         margin: 0;
@@ -66,7 +72,7 @@
 
       /* Hero Section */
       .hero {
-        background-image: url("images/banner.png");
+        background-image: url("images/banner-mindo.png");
         background-size: cover;
         background-attachment: fixed;
         background-repeat: no-repeat;
@@ -250,9 +256,9 @@
           <li><a href="index.html" class="active">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="menu.html">Menu</a></li>
-          <li><a href="frozen.html">Frozen</a></li>
           <li><a href="kemitraan.html">Kemitraan</a></li>
           <li><a href="galeri.html">Galeri</a></li>
+          <li><a href="frozen.html">Frozen</a></li>
           <li><a href="kontak.html">Kontak</a></li>
         </ul>
       </div>
@@ -278,24 +284,41 @@
 
     <!-- Menu Section -->
     <section class="menu">
-      <h2>Our Best Sellers</h2>
-      <div class="menu-items">
-        <div class="menu-item">
-          <img src="images/sample-menu.png" alt="Crispy Fried Chicken" />
-          <h3>Crispy Fried Chicken</h3>
-          <p>
-            Golden, crunchy, and perfectly seasoned to satisfy your cravings.
-          </p>
+      <div class="container">
+        <h2>Our Menu</h2>
+        <div class="menu-items">
+          <div class="menu-item">
+            <img src="images/sample-menu.png" alt="Crispy Fried Chicken" />
+            <p>
+              Golden, crunchy, and perfectly seasoned to satisfy your cravings.
+            </p>
+          </div>
+          <div class="menu-item">
+            <img src="images/sample-menu2.png" alt="Spicy Wings" />
+            <p>Bold, fiery, and packed with a punch of flavors.</p>
+          </div>
+          <div class="menu-item">
+            <img src="images/sample-menu3.png" alt="Fried Chicken Burger" />
+            <p>
+              A juicy fried chicken patty with fresh toppings on a soft bun.
+            </p>
+          </div>
         </div>
-        <div class="menu-item">
-          <img src="images/sample-menu.png" alt="Spicy Wings" />
-          <h3>Spicy Wings</h3>
-          <p>Bold, fiery, and packed with a punch of flavors.</p>
-        </div>
-        <div class="menu-item">
-          <img src="images/sample-menu.png" alt="Fried Chicken Burger" />
-          <h3>Fried Chicken Burger</h3>
-          <p>A juicy fried chicken patty with fresh toppings on a soft bun.</p>
+        <div class="btn-wrapper" style="display: flex; justify-content: center">
+          <a
+            href="menu.html"
+            class="btn-cta"
+            style="
+              display: inline-block;
+              text-align: center;
+              background-color: #ffcc00;
+              padding: 1rem 2rem;
+              margin: 2rem 0;
+              color: #000;
+            "
+          >
+            Selengkapnya
+          </a>
         </div>
       </div>
     </section>
@@ -320,10 +343,24 @@
 
     <!-- Footer -->
     <footer class="footer">
-      <div class="footer-links">
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms & Conditions</a>
-        <a href="#">Contact Us</a>
+      <div
+        class="footer-socialmedia"
+        style="display: flex; justify-content: center; gap: 2rem"
+      >
+        <a href="#">
+          <img
+            src="images/instagram-removebg-preview.png"
+            alt=""
+            style="width: 70px"
+          />
+        </a>
+        <a href="#">
+          <img
+            src="images/wa-removebg-preview.png"
+            alt=""
+            style="width: 70px"
+          />
+        </a>
       </div>
       <div class="social-icons">
         <img src="" alt="" />

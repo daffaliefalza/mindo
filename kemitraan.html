@@ -8,17 +8,119 @@
     <link rel="stylesheet" href="css/style.css" />
 
     <style>
-      .jenis-paket .container img {
+      .jenis-paket {
+        padding: 3rem 0;
+        background-color: #f9f9f9;
       }
 
       .jenis-paket h2 {
         text-align: center;
-        margin: 1.5rem 0;
+        margin-bottom: 2rem;
+        font-size: 2rem;
+        color: #333;
       }
 
-      .jenis-paket .container .row {
-        display: flex;
-        gap: 1rem;
+      .jenis-paket .row {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 3rem;
+      }
+
+      .jenis-paket .col {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        text-align: center;
+        transition: transform 0.3s ease;
+      }
+
+      .jenis-paket .col:hover {
+        transform: translateY(-10px);
+      }
+
+      .jenis-paket .col h2 {
+        font-size: 1.8rem;
+        padding: 1rem;
+        color: #d64b4b;
+      }
+
+      .jenis-paket .col img {
+        width: 100%;
+        height: auto;
+        border-bottom: 3px solid #d64b4b;
+      }
+
+      .jenis-paket img[alt="Flowchart Kemitraan"] {
+        margin-top: 2rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+      }
+
+      .jenis-paket span {
+        font-size: 4rem;
+        color: #d64b4b;
+        margin-top: 2rem;
+        display: block;
+        text-align: center;
+      }
+
+      /* Responsive adjustments */
+      @media (max-width: 768px) {
+        .jenis-paket h2 {
+          font-size: 1.6rem;
+        }
+
+        .jenis-paket .col h2 {
+          font-size: 1.4rem;
+        }
+
+        .jenis-paket span {
+          font-size: 3rem;
+        }
+      }
+      .mitra-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        margin-top: 3rem;
+      }
+
+      .mitra-wrapper div {
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        padding: 1.5rem;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+      }
+
+      .mitra-wrapper div:hover {
+        transform: translateY(-5px);
+      }
+
+      .mitra-wrapper h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        color: #333;
+      }
+
+      .mitra-wrapper p {
+        font-size: 1rem;
+        color: #666;
+      }
+
+      /* Responsive design */
+      @media (max-width: 768px) {
+        .mitra-wrapper {
+          grid-template-columns: 1fr;
+        }
+
+        .mitra-wrapper div {
+          margin-bottom: 1rem;
+        }
       }
     </style>
   </head>
@@ -35,8 +137,9 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="menu.html">Menu</a></li>
-          <li><a href="frozen.html">Frozen</a></li>
           <li><a href="kemitraan.html" class="active">Kemitraan</a></li>
+          <li><a href="galeri.html">Galeri</a></li>
+          <li><a href="frozen.html">Frozen</a></li>
           <li><a href="kontak.html">Kontak</a></li>
         </ul>
       </div>
@@ -62,17 +165,70 @@
         <h2>Jenis Paket</h2>
         <div class="row">
           <div class="col">
-            <img src="images/paket-1.png" alt="" />
+            <h2>Paket Gerobak Ekonomis</h2>
+            <img src="images/paket-1-new.png" alt="" />
           </div>
           <div class="col">
-            <img src="images/paket-2.png" alt="" />
+            <h2>Paket Hotsnack Reguler</h2>
+            <img src="images/paket-2-new.png" alt="" />
           </div>
         </div>
 
         <h2>Alur Visual Pendaftaran Kemitraan</h2>
         <img src="images/flowchart-kemitraan.png" alt="" style="width: 100%" />
 
-        <!-- <ol type="number">
+        <span style="font-size: 5rem; text-align: center; display: block"
+          >↓</span
+        >
+      </div>
+    </section>
+
+    <section class="alur-mitra">
+      <div class="container">
+        <div class="mitra-wrapper">
+          <div class="one">
+            <h3>1. Hubungi Mindo</h3>
+            <p>Mitra menghubungi Mindo di 08563222205</p>
+          </div>
+          <div class="two">
+            <h3>2. Shareloc dan Dokumentasi Lokasi</h3>
+            <p>
+              Mitra wajib melampirkan shareloc via WA, kemudian mengirimkan
+              foto-foto dan video pendek lokasi yang akan ditempati.
+            </p>
+          </div>
+          <div class="three">
+            <h3>3. Survey</h3>
+            <p>
+              Tim Manajemen Mindo Akan mendatangi lokasi dan survey tempat yang
+              ditentukan
+            </p>
+          </div>
+          <div class="four">
+            <h3>4. Pilih Paket Kemitraan</h3>
+            <p>
+              Pilih paket kemitraan sesuai kemampuan dan budget, kemudian isi
+              form akad yang disediakan oleh pihak Mindo Fried Chicken
+            </p>
+          </div>
+          <div class="five">
+            <h3>5. Mindo Mengirim Booth, Mitra melakukan pelunasan</h3>
+          </div>
+          <div class="six">
+            <h3>6. Training dan Test</h3>
+            <p>
+              Mitra wajib menjalani training dan mengikuti test uji kelayakan
+              hingga mendapatkan Surat Izin Kelayakan (SIK)
+            </p>
+          </div>
+          <div class="seven">
+            <h3>7. Siap Berjualan.</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <ol type="number">
           <li>Hubungi customer service mindo (08563222205)</li>
           <li>Shareloc dan dokumentasi lokasi</li>
           <li>Survey</li>
@@ -81,8 +237,6 @@
           <li>Tim Mindo mengirimkan Booth</li>
           <li>Mitra siap untuk berjualan</li>
         </ol> -->
-      </div>
-    </section>
 
     <!-- footer -->
     <footer class="footer">
